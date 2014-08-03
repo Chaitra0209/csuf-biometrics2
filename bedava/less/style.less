@@ -1,0 +1,532 @@
+/** 
+ *------------------------------------------------------------------------------
+ * @package       T3 Framework for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2013 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt, JoomlaBamboo, (contribute to this project at github 
+ *                & Google group to become co-author)
+ * @Google group: https://groups.google.com/forum/#!forum/t3fw
+ * @Link:         http://t3-framework.org 
+ *------------------------------------------------------------------------------
+ */
+
+
+
+// ---------------------------------------------------------
+// HEADER
+// ---------------------------------------------------------
+
+.t3-header {
+  padding: @T3globalPadding * 2;
+  background:@otHeaderBackground;
+}
+
+
+// Logo
+// ---------------------------------------------------------
+.logo {
+  float: left;
+  margin:0 !important;
+
+  h1, h1 a {
+    display: inline-block;
+    line-height: 1;
+    margin: 0;
+  }
+
+}
+
+
+// Logo Image
+// ----------
+.logo-image {
+  overflow: hidden;
+
+
+  a {
+    background-image: url("@{T3LogoImage}");
+    background-repeat: no-repeat;
+    width: @T3logoWidth;
+    height: @T3logoHeight;
+  }
+
+  //hide sitename and slogan
+  span, small {
+    display: none;
+  }
+
+}
+
+
+
+// Logo Text
+// ----------
+.logo-text {
+
+  h1 {
+    color: @grayDark;
+  }
+
+  h1 a {
+    color: @grayDark;
+    text-decoration: none;
+  }
+
+  &:hover h1 a,
+  h1 a:hover,
+  h1 a:active,
+  h1 a:focus {
+    text-decoration: none;
+  }
+
+  // Taglines
+  .site-slogan {
+    display: block;
+    font-size: @baseFontSize;
+    margin-top: 5px;
+  }
+
+}
+
+// Head Search
+// ------------------------------------------------------
+.head-search {
+  float: right;
+  margin-top: @T3globalMargin;
+
+  form {
+    margin: 0;
+    float: right;
+  }
+  
+  label {
+    display: none;
+  }
+  
+  .search {
+  }
+  
+  .input {
+    background: @white url(../images/ico/search-invert.png) no-repeat 20px center;
+    width: 220px;
+    padding-left: (@T3globalPadding * 3);
+    padding-top: (@T3globalPadding * 2) / 3;
+    padding-bottom: (@T3globalPadding * 2) / 3;
+    .box-shadow(none);
+    border:none;
+    font-weight:400;
+    font-size:@T3smallFontSize;
+    // focus state
+    &:focus {
+      color: @blue;
+      width: 280px;
+      .box-shadow(none);
+    }
+  }
+
+}
+
+
+
+// ---------------------------------------------------------
+// SPOTLIGHTS
+// ---------------------------------------------------------
+
+.t3-sl {
+  padding-bottom: @T3globalPadding * 3;
+  padding-top: @T3globalPadding * 3;
+  // /.clearfix();
+}
+
+// Spotlight 1
+// -----------
+.t3-sl-1 {
+}
+
+// Spotlight 2
+// -----------
+.t3-sl-2 {
+}
+
+// Spotlight 3
+// -----------
+.t3-sl-3 {
+}
+
+// Spotlight 4
+// -----------
+.t3-sl-4 {
+}
+
+
+
+// ---------------------------------------------------------
+// MAIN BODY
+// ---------------------------------------------------------
+.t3-mainbody {
+  padding: @T3globalPadding * 2;
+  background:@white;
+  border:1px solid #e2dedb;
+}
+
+// Content
+// -------
+.t3-content {
+}
+
+// Sidebars
+// --------
+.t3-sidebar {
+}
+
+.t3-sidebar-1 {
+}
+
+.t3-sidebar-2 {
+}
+
+
+
+// ---------------------------------------------------------
+// FOOTER
+// ---------------------------------------------------------
+.t3-footer {
+  background: darken(@bodyBackground, 5%);
+  color: @grayDark;
+  .clearfix();
+  // small
+  small {
+    display: block;
+    font-size: 100%; //Use global footer font size.
+  }
+  // links
+  a {
+    color: @T3FooterModuleColor;
+    // Link States
+    &:hover, &:active, &:focus {
+      color: @linkColor;
+    }
+  }
+}
+
+// Foot Nav
+// --------
+.t3-footnav {
+  padding: (@T3globalPadding * 3) 0 (@T3globalPadding * 2);
+  .clearfix();
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  li {
+    line-height: 24px;
+  }
+  
+  .module-title {
+    font-size: @baseFontSize + 4px;
+    color: @T3FooterModuleTitleColor;
+  }
+}
+
+// Copyright
+// ---------
+.t3-copyright {
+  border-top: 1px dashed darken(@bodyBackground, 10%);
+  font-size: @T3smallerFontSize;
+  padding: (@T3globalPadding * 2) 0 (@T3globalPadding * 4);
+  .clearfix();
+
+  a {color:@linkColor}
+}
+
+.poweredby {
+  float: right;
+  text-align: right;
+}
+
+
+
+// ---------------------------------------------------------
+// OT Slideshow Responsive
+// ---------------------------------------------------------
+
+h3.ot-slideshow-title {color:@white}
+
+
+// ---------------------------------------------------------
+// Banner
+// ---------------------------------------------------------
+
+.banner1 {
+    width:100%;
+    padding: @T3globalPadding 0 @T3globalPadding (@T3globalPadding);
+    color: #c3ccd5;
+    position: relative;
+}
+.banner1 p {
+    font-size: 21px !important;
+    display: block;
+    text-shadow: 0px 1px #000;
+}
+
+.banner1 p span {
+    color: #fff;
+    font-weight: 700;
+}
+
+
+//
+// Accordion
+// --------------------------------------------------
+
+// Group == heading + body
+.accordion-group {
+  margin-bottom: 2px;
+  .border-radius(@baseBorderRadius);
+
+}
+.accordion-heading {
+    border-bottom: 0;
+    border-right-color: #e5e5e5;
+    border-bottom-color: #e5e5e5;
+    background: #f3f3f3;
+
+}
+.accordion-heading a {color:@grayDark}
+
+
+
+// ---------------------------------------------------------
+// K2
+// ---------------------------------------------------------
+
+div.itemListCategory {
+  background: none !important;
+  border: none !important;
+  margin: 4px 0;
+  padding: 0 !important;
+}
+div.itemListCategory img {
+  float: left;
+  display: block;
+  background: #fff;
+  padding: 4px;
+  border: 1px solid #ddd;
+  margin: 0 8px 0 0;
+}
+
+div.subCategory {
+  background: none !important;
+  border: none !important;
+  margin: 4px;
+  padding: 8px;
+}
+div.itemContainer,div.groupLeading {
+float: left;
+border-bottom:10px solid @gray;
+margin-bottom:20px;
+padding-bottom:20px;
+}
+div.tagItemView {
+border-bottom:10px solid @gray;
+padding: 10px 0 !important;
+margin: 10px 0 10px 0 !important;
+}
+div.itemContainerLast {
+border-bottom:none !important;
+margin-bottom:0px;
+padding-bottom:0px;
+}
+div.subCategory a.subCategoryImage, div.subCategory a.subCategoryImage:hover {
+text-align: left !important;
+display: block;
+float: left;
+}
+div.catItemImageBlock {
+padding: 8px;
+margin: 0 16px 16px 0;
+float: left;
+}
+div.itemToolbar {
+padding: 2px 0;
+margin: 16px 0 0 0;
+border-top: 1px solid @gray !important;
+border-bottom: 1px solid @gray !important;
+background: none !important;
+}
+div.userItemHeader h3.userItemTitle {
+font-family: @sansFontFamily !important;
+font-size: 24px;
+font-weight: normal;
+line-height: 110%;
+padding: 10px 0 4px 0;
+margin: 0;
+}
+div.tagItemHeader h2.tagItemTitle {
+font-family: @sansFontFamily !important;
+font-size: 24px;
+font-weight: normal;
+line-height: 110%;
+padding: 10px 0 4px 0;
+margin: 0;
+}
+div.catItemHeader h3.catItemTitle {
+font-family: @sansFontFamily !important;
+font-size: 24px;
+font-weight: normal;
+line-height: 110%;
+padding: 10px 0 4px 0;
+margin: 0;
+}
+div.itemHeader h2.itemTitle {
+font-family: @sansFontFamily !important;
+font-size: 36px;
+font-weight: 700 !important;
+line-height: 110%;
+padding: 10px 0 4px 0;
+margin: 0;
+}
+div.itemAuthorBlock {
+background: none !important;
+border: 1px solid @gray !important;
+margin: 0 0 16px 0;
+padding: 8px;
+}
+div.itemComments {
+background: none !important;
+border: 1px solid @gray !important;
+padding: 16px;
+}
+/* Video */
+div.itemVideoBlock {margin:0;padding:0;background:none !important;}
+  div.itemVideoBlock div.itemVideoEmbedded {text-align:center;} /* for embedded videos (not using AllVideos) */
+  div.itemVideoBlock span.itemVideo {display:block;overflow:hidden;}
+  div.itemVideoBlock span.itemVideoCaption {color:#eee;float:left;display:block;font-size:11px;font-weight:bold;width:60%;}
+  div.itemVideoBlock span.itemVideoCredits {color:#eee;float:right;display:block;font-style:italic;font-size:11px;width:35%;text-align:right;}
+
+.itemVideoEmbedded {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 52.2%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.itemVideoEmbedded iframe, .itemVideoEmbedded object, .itemVideoEmbedded embed, .itemVideoEmbedded video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.odd {
+background: none !important;
+padding: 2px;
+border-bottom: 1px dashed @gray !important;
+}
+
+.even {
+background: none !important;
+padding: 2px;
+border-bottom: 1px dashed @gray !important;
+}
+div.userBlock {
+background: none !important;
+border: 1px solid @gray !important;
+margin: 0 0 16px 0;
+padding: 8px;
+clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

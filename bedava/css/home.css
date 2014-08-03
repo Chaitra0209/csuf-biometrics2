@@ -1,0 +1,114 @@
+.home .t3-sl-1 {
+  padding: 0;
+  border-bottom: 7px solid #eeebe8;
+}
+.home .t3-sl-1 .jumbotron {
+  background-color: #eee;
+  background-image: -webkit-gradient(radial,center center,0,center center,460,from(#fff),to(#eee));
+  background-image: -webkit-radial-gradient(circle,#fff,#eee);
+  background-image: -moz-radial-gradient(circle,#fff,#eee);
+  background-image: -o-radial-gradient(circle,#fff,#eee);
+  background-repeat: no-repeat;
+  border-bottom: 7px solid #eeebe8;
+}
+.home .t3-sl-1 .jumbotron .btn-large {
+  font-size: 24.5px;
+  padding: 18px 44.5px;
+}
+.home .t3-sl-1 .t3-social {
+  background: #eee;
+  padding: 20px 0;
+}
+.home .t3-sl-1 .t3-social .t3-social-btns {
+  margin: 0;
+  height: 20px;
+  text-align: center;
+}
+.home .t3-sl-1 .t3-social .t3-social-btns li {
+  display: inline-block;
+  margin: 0 10px;
+  height: 20px;
+}
+.home .t3-sl-2 {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e2dedb;
+  padding: 20px;
+}
+.home .t3-sl-2 p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.home .t3-sl-3 {
+  padding: 20px;
+  background: #000;
+  border-left: 1px solid #e2dedb;
+  border-right: 1px solid #e2dedb;
+}
+.home .t3-sl-3 p img {
+  margin-bottom: 20px;
+}
+.home .t3-sl-3 {
+  text-align: center;
+}
+.home .t3-sl-3 p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.home .t3-sl-3 .jumbotron {
+  padding-top: 0;
+}
+.home .t3-sl-3 .jumbotron h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.home .t3-sl-3 .jumbotron p {
+  font-size: 21px;
+  line-height: 1.275;
+  color: #999;
+}
+.home .t3-sl-5 {
+  background: #07b;
+}
+.home .t3-sl-5 {
+  text-align: center;
+}
+.home .t3-sl-5 p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.home .t3-sl-5 .jumbotron {
+  padding-top: 0;
+}
+.home .t3-sl-5 .jumbotron h1 {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.home .t3-sl-5 .jumbotron p {
+  font-size: 21px;
+  line-height: 1.275;
+  color: #fff;
+}
+.home .t3-sl-5 h1 {
+  color: #fff;
+}
+.home .t3-sl-4 {
+  border: 1px solid #e2dedb;
+  padding: 20px;
+  background: #fff;
+}
+.home .t3-sl-4 .jumbotron .btn-large {
+  font-size: 24.5px;
+  padding: 18px 44.5px;
+}
+.home .t3-sl-4 .section-arrow-alt {
+  background: url(../images/arrow-section-alt.png) no-repeat center -1px #eee;
+  width: 37px;
+  height: 19px;
+  position: absolute;
+  top: -1px;
+  left: 50%;
+  margin-left: -19px;
+}

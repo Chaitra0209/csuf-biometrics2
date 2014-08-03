@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="plugin" group="system" version="3.0" method="upgrade">
+    <name>System - HOT Login</name>
+    <author>EmmeAlfa</author>
+    <authorEmail>info@emmealfa.it</authorEmail>
+    <authorUrl>http://www.emmealfa.it</authorUrl>
+    <creationDate>March 2013</creationDate>
+    <license>GNU/GPL</license>
+    <copyright></copyright>
+    <version>3.0.1</version>
+    <description></description>
+
+    <files>
+        <folder>tmpl</folder>     
+        <folder>extra</folder> 
+        <filename plugin="hotlogin">hotlogin.php</filename>
+    </files>
+
+    <languages folder="lang">
+		<language tag="en-GB">en-GB/en-GB.plg_system_hotlogin.ini</language>
+		<language tag="it-IT">it-IT/it-IT.plg_system_hotlogin.ini</language>
+        <language tag="zh-CN">zh-CN/zh-CN.plg_system_hotlogin.ini</language>
+		<language tag="fr-FR">fr-FR/fr-FR.plg_system_hotlogin.ini</language>
+		<language tag="de-DE">de-DE/de-DE.plg_system_hotlogin.ini</language>        
+	</languages>
+    
+	<config>
+	  <fields name="params">
+		<fieldset name="basic">
+			<field 
+				name="site_width" 
+				type="text" size="10" 
+				default="900px" 
+				label="HL_SITE_WIDTH" 
+				description="HL_SITE_WIDTH_DESC" />
+			<field 
+				name="tab_offset" 
+				type="text" 
+				size="5" 
+				default="20" 
+				label="HL_HORIZ_OFFSET"
+				description="HL_HORIZ_OFFSET_DESC" />
+			<field 
+				name="v_offset"   
+				type="text" 
+				size="5" 
+				default="0" 
+				label="HL_VERT_OFFSET"
+				description="HL_VERT_OFFSET_DESC" />
+			<field 
+				name="fixed" 
+				type="radio" 
+				default="n" 
+				label="HL_BIND"
+				description="HL_BIND_DESC" >
+					<option value="y">JYES</option>
+					<option value="n">JNO</option>
+				</field>
+			<field 
+				name="opacity"    
+				type="text" 
+				size="2" 
+				default="9" 
+				label="HL_OPACITY" 
+				description="HL_OPACITY_DESC" />    
+			<field 
+				name="tab_text_not_logged"    
+				type="text" 
+				size="10" 
+				default="Login" 
+				label="HL_TAB_TEXT_NOT_LOGGED" 
+				description="HL_TAB_TEXT_NOT_LOGGED_DESC" />  
+			<field 
+				name="tab_text_logged"    
+				type="text" 
+				size="10" 
+				default="Logout" 
+				label="HL_TAB_TEXT_LOGGED" 
+				description="HL_TAB_TEXT_LOGGED_DESC" />  
+			<field 
+				name="handle_css" 
+				type="textarea" 
+				rows="10" 
+				cols="25" 
+				label="HL_CSS"
+				description="HL_CSS_DESC" 
+				default="font-weight: bold; color: #f00; text-decoration: none; font-size: 12px; line-height: 25px;"/>
+			<field 
+				name="quicklogout" 
+				type="radio" 
+				default="n" 
+				label="HL_QUICK_LOGOUT" 
+				description="HL_QUICK_LOGOUT_DESC" >
+					<option value="y">JYES</option>
+					<option value="n">JNO</option>
+				</field>
+			<field 
+				name="openonguest" 
+				type="radio" 
+				default="0" 
+				label="HL_AUTO_OPEN" 
+				description="HL_AUTO_OPEN_DESC" >
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			<field name="spacer1" type="spacer" label="HL_SPACER_OVERRIDE" />
+
+			<field 
+				name="override"   
+				type="radio" 
+				default="n" 
+				label="HL_MOD_OVERRIDE"
+				description="HL_MOD_OVERRIDE_DESC"  >        
+					<option value="y">JYES</option>
+					<option value="n">JNO</option>
+				</field>
+			<field 
+				name="ov_module" 
+				type="sql" 
+				label="HL_MOD_OVERRIDE_NAME"
+				description="HL_MOD_OVERRIDE_NAME_DESC"                
+				query="SELECT DISTINCT module FROM #__modules" 
+				key_field="module" 
+				value_field="module" />
+			<field 
+				name="module_title"    
+				type="text" 
+				size="10" 
+				default="" 
+				label="HL_MODULE_TITLE" 
+				description="HL_MODULE_TITLE_DESC" />  
+				
+			<field name="spacer2" type="spacer" label="HL_SPACER_DEBUG" />
+
+			<field 
+				name="nomootools" 
+				type="radio" 
+				default="n" 
+				label="HL_NO_MOOTOOLS" 
+				description="HL_NO_MOOTOOLS_DESC">
+					<option value="y">JYES</option>
+					<option value="n">JNO</option>
+				</field>		
+		</fieldset>
+	  </fields>    
+	</config>
+
+	<updateservers>
+	   <server type="extension" priority="2" name="HOTLogin Updates">http://www.emmealfa.com/repository/hotlogin.xml</server>
+	</updateservers>
+
+</extension>
